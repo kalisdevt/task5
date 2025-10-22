@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     button.addEventListener('click', function () {
+        resultHolder.classList.add('d-none');
+        resultHolder.innerHTML = '';
         errorHolder.classList.add('d-none');
         errorHolder.innerHTML = '';
         const count = countProducts.value;
